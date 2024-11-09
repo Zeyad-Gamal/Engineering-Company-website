@@ -19,393 +19,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
      
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
     
-<style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    z-index: 1000;
-}
 
-html{
-  overflow-x: hidden;
-}
-
-    body{
-        /* overflow: hidden; */
-    }
-
-    section{
-        margin: auto !important;width: 100% !important; 
-    }
-
-    nav{
-        background-color: rgba(30, 45, 59,1) !important;
-        padding: 0 !important;
-    }
-    header{
-        background-color: rgba(30, 45, 59,1) !important;
-
-    }
-
-    nav .container-fluid {
-
-        background-color: rgba(30, 45, 59,1) !important;
-padding: 0 !important;
-    }
-
-    nav .container-fluid .logo-part{
-        background-color: gold;height: 5.9rem !important;
-        display: flex;justify-content: center;align-items: center;flex-direction: row;padding: 1rem !important;
-        
-    }
-
-    nav .container-fluid .collapse{
-        padding: 1.7rem !important;
-
-    }
-
-    nav .container-fluid .collapse ul {
-        text-align: right;margin-left: auto !important;
-        gap: 4rem;
-    }
-
-    nav .container-fluid .collapse ul li a{
-        font-size: 2vh;
-        font-weight: lighter;
-        color: whitesmoke;
-        text-transform: uppercase;
-    }
-
-    nav .container-fluid .collapse ul li a:hover{
-        color: gold !important;
-    }
-
-    .content-container{
-    background-color: ;position: relative !important;top: 10rem;display: flex;flex-direction: column;justify-content: center;z-index: 0;
-}
-
-.content-container .intro{
-    display: flex;flex-direction: column;justify-content: center;text-align: center;
-}
-
-.content-container .intro p{
-    color: whitesmoke;
-    font-size: 9vh;
-    font-weight: 500;
-}
-
-.content-container .intro .down-btn,
-.content-container .intro .down-btn i
-{
-    font-size: 7vh;
-    font-weight: 700;
-    color: whitesmoke;
-}
-
-
-
-
-
-.services-container{
-    background-color: whitesmoke;position: relative !important;top: 50rem;display: flex;flex-direction: column;justify-content: center;
-}
-
-.services-container .title-address{
-    display: flex;flex-direction: column; justify-content: center;text-align: center;align-items: center;margin-top: 3rem !important;
-}
-.title{
-    color: #1e2d3b;
-    font-size: 8vh;
-    text-transform: uppercase;
-    /* text-align: center; */
-    /* border-bottom: 5px solid goldenrod; */
-    /* width: fit-content;margin: auto; */
-}
-
-
-.services-container .title-address .hr{
-background-color: goldenrod !important;height: 0.5rem !important;width: 8rem !important; opacity: 1 !important;
-margin: 0;margin: auto;
-}
-
-
-@media screen and (max-width: 485px) {
-    section{
-        width: fit-content !important;
-    }
-}
-
-
-
-
-.services-boxes{
-   margin-top: 4rem !important;
-    display: flex !important;flex-direction: row !important;flex-wrap: wrap !important; margin: auto;gap: ;justify-content: center;gap: 2rem;padding: 2rem;
-}
-
-.services-boxes .service-box{
-    display: flex;flex-direction: column;background-color: red;justify-content: center; width: 18rem;
-}
-
-.services-boxes .service-box .service-box-img{
-    
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    width: 100%;
-    height: 15rem;
-    margin: auto;
-}
-
-.services-boxes .service-box .service-box-content{
-    text-align: left;
-    padding: 1rem;
-    height: 14rem;
-    background-color: #f7f7f7;
-}
-
-.services-boxes .service-box .service-box-content h4{
-    font-size: 3.5vh;
-    color: #3d5975;
-    
-}
-
-.services-boxes .service-box .service-box-content p{
-    color: #898989;font-weight: lighter;
-}
-
-/* About */
-
-.about-container{
-    background-color: transparent;position: relative !important;top: 50rem;display: flex;flex-direction: column;justify-content: center;
-}
-
-.about-container .title-address{
-    display: flex;flex-direction: column; justify-content: center;text-align: center;align-items: center;margin-top: 3rem !important;
-}
-.about-container .title-address .title{
-    color: #1e2d3b;
-    font-size: 8vh;
-    text-transform: uppercase;
-    /* text-align: center; */
-    /* border-bottom: 5px solid goldenrod; */
-    /* width: fit-content;margin: auto; */
-}
-
-
-.about-container .title-address .hr{
-background-color: goldenrod !important;height: 0.5rem !important;width: 6rem !important; opacity: 1 !important;
-margin: 0;margin: auto;position: relative;right: 3rem;
-}
-
-
-.aboutSecondLayer{
-    background-color: ;position: relative !important;top: ;display: flex;flex-direction: column;justify-content: center;
-    width: 100%;height: 100%;
-}
-
-.aboutSecondLayer .about-boxes{
-    display: flex;flex-direction: row;flex-wrap: wrap !important;background-color: ;
-    height: 35rem;
-}
-
-.aboutSecondLayer .about-boxes .about-box-right{
-    width: 50% !important;
-    height: 100% !important;background-color: transparent;
-}
-
-.aboutSecondLayer .about-boxes .about-box-left{
-    width: 50% !important;
-    height: 100% !important;background-color: #f7f7f7;
-    display: flex;flex-direction: column;
-justify-content: right;text-align: right;
-}
-
-
-.aboutSecondLayer .about-boxes .about-box-left .paragraph{
-    margin-left: auto;
-    margin-right: 10rem;
-    width: 25rem;
-    text-align:  left;
-}
-.aboutSecondLayer .about-boxes .about-box-left p{
-    color: #898989;font-weight: lighter;
-    /* padding-inline: 7rem; */
-    /* text-align: right;    */
-    font-size: 17px;
-    line-height: 1.7em;
-    color: rgb(53, 52, 52);
-}
-
-@media screen and (max-width: 768px) {
-    .aboutSecondLayer .about-boxes{
-        flex-direction: column !important;
-    }
-    .aboutSecondLayer .about-boxes .about-box-right,
-    .aboutSecondLayer .about-boxes .about-box-left{
-        width: 100% !important;
-}
-}
-
-
-.grades-container{
-    background-color: transparent;position: relative !important;top: 50rem;display: flex;flex-direction: row;justify-content: center;align-items: center;
-    gap: 3rem;background-color: #edcd1f;width: 100%;height: fit-content;flex-wrap: wrap;padding: 1.5rem;
-}
-
-
-.grades-container .grade-space{
-    
-    display: flex;flex-direction: column;
-    align-items: center;justify-content: center;
-}
-
-.grades-container .grade-space h1{
-color: #3d5975;
-font-weight: 640;font-size: 7.5vh;
-text-align: center;
-}
-
-.grades-container .grade-space .paragraph{
-    width: 50%;text-align: center;
-}
-.grades-container .grade-space .paragraph p{
- text-transform: capitalize;  
- color: #3d5975;
-font-weight: 620;font-size: 3vh;text-align: center;
-}
-
-.grades-container .hr{
-    background-color: whitesmoke !important;height: 4rem !important;width: 0.1rem !important; opacity: 1 !important;
-    margin-block: auto;   
-}
-
-
-
-.projects-container{
-    position: relative !important;top: 50rem;display: flex;flex-direction: column;justify-content: center;
-    background-color: whitesmoke;padding-bottom: 7rem;
-}
-
-.projects-container .title-address{
-    display: flex;flex-direction: column; justify-content: center;text-align: center;align-items: center;margin-top: 3rem !important;
-}
-
-.projects-container .title-address .hr{
-    background-color: goldenrod !important;height: 0.5rem !important;width: 8rem !important; opacity: 1 !important;
-    margin: 0;margin: auto;
-}
-
-.projects-container .projects-boxes{
-    display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;gap: 2rem;width: 70%;margin: auto;margin-top: 4rem;
-}
-
-.projects-container .projects-boxes .project-box{
-    width: 455px;height: 455px;
-overflow: hidden;
-position: relative;
-
-}
-
-.projects-container .projects-boxes .project-box .project-box-img{
-width: 100%;height: 100%;
-    background: url(images/service2.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 0.5s !important;
-    position: relative;
-}
-
-
-.projects-container .projects-boxes .project-box .project-box-description{
-    background-color: rgba(240, 240, 240, 0.745);width: 100%;height: 100%;opacity: 0;
-    transition: 0.5s !important;
-    
-}
-
-.projects-container .projects-boxes .project-box .project-box-description h5{
-    text-align: center;position: relative;top: 50%;color: #424242;font-weight: lighter;
-    }
-
-    .projects-container .projects-boxes .project-box .project-box-description button{
-    text-align: center;position: relative;top: 80%;left: 88%;
-    color: #424242; width: fit-content;height: fit-content;background-color: transparent !important;
-    }
-
-    
-    .projects-container .projects-boxes .project-box:hover .project-box-img{
-        scale: 1.1;transition: 0.5s !important;
-    }
-
-    .projects-container .projects-boxes .project-box:hover .project-box-description{
-        opacity: 1; transition: 0.5s !important;
-    }
-
-
-
-
-
-    .clients-container{
-    position: relative !important;top: 50rem;display: flex;flex-direction: column;justify-content: center;
-    background-color: rgb(234, 234, 234);padding: 2.5rem;padding-bottom: 0;
-}
-
-.clients-container .title-address{
-    display: flex;flex-direction: column; justify-content: center;text-align: center;align-items: center;margin-top: 3rem !important;
-}
-
-.clients-container .title-address .hr{
-    background-color: goldenrod !important;height: 0.5rem !important;width: 8rem !important; opacity: 1 !important;
-    margin: 0;margin: auto;
-}
-
-.clients-container .clients-boxes{
-    margin-top: 3.5rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6rem;
-    padding-bottom: 2.5rem;
-}
-
-
-.clients-container .clients-boxes .client-box{
-    width: 5rem;
-    height:5rem;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    border-radius: 50%;
-    filter: grayscale(100%);
-}
-
-.clients-container .clients-boxes .client-box:hover{
-    filter: grayscale(0%);
-}
-
-
-.contact-container{
-    position: relative !important;top: 50rem;display: flex;flex-direction: column;justify-content: center;
-    background-color: whitesmoke;
-}
-
-.contact-container .title-address{
-    display: flex;flex-direction: column; justify-content: center;text-align: center;align-items: center;margin-top: 3rem !important;
-}
-
-.contact-container .title-address .hr{
-    background-color: goldenrod !important;height: 0.5rem !important;width: 8rem !important; opacity: 1 !important;
-    margin: 0;margin: auto;
-}
-
-</style>
 
 
 
@@ -455,10 +71,10 @@ width: 100%;height: 100%;
                 </div>
               </div>
             </div>
-            <div class="modal-footer">
+            <!-- <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -469,7 +85,13 @@ width: 100%;height: 100%;
     ">
         <div class="container-fluid">
           <div class="logo-part">
-            <a class="navbar-brand" href="#">Navbar LOGO</a>
+            <a class="navbar-brand" href="#" style="display: flex;flex-direction: row;align-items: center;gap: 1rem;font-weight: 700;color: #3a3a3a;">3M Company
+
+                <div style="display: flex;flex-direction: column;">
+                    <span style="font-weight: 500;color: #3a3a3a;">Mining</span>
+                    <span style="font-weight: 500;color: #3a3a3a;">Exploration</span>
+                </div>
+            </a>
           </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -652,17 +274,17 @@ width: 100%;height: 100%;
   </div>
 
 
-  <div class="projects-container">
+  <div id="projects-container" class="projects-container">
     <div class="title-address" >
         <h1 class="title">projects</h1>
         <div class="hr"></div>
            </div>
 
            <div class="projects-boxes">
-            <div class="project-box">
-                <div class="project-box-img">
+            <div class="project-box ">
+                <div class="project-box-img" style=" background: url(images/service2.webp);">
                     <div class="project-box-description" >
-                        <h5>kl</h5>
+                        <h5>project 1</h5>
                         <button type="button" data-bs-toggle="modal" data-bs-target="#ShareButton" ><i class="bi bi-share"></i></button>
                     </div>
                 </div>
@@ -670,9 +292,9 @@ width: 100%;height: 100%;
             </div>
             
             <div class="project-box">
-                <div class="project-box-img">
+                <div class="project-box-img" style=" background: url(images/aboutBackground2.jpg);">
                     <div class="project-box-description" >
-                        <h5>kl</h5>
+                        <h5>project 2</h5>
                         <button type="button" data-bs-toggle="modal" data-bs-target="#ShareButton" ><i class="bi bi-share"></i></button>
                     </div>
                 </div>
@@ -681,9 +303,9 @@ width: 100%;height: 100%;
 
 
             <div class="project-box">
-                <div class="project-box-img">
+                <div class="project-box-img" style=" background: url(images/aboutbackground.jfif);">
                     <div class="project-box-description" >
-                        <h5>kl</h5>
+                        <h5>project 3</h5>
                         <button type="button" data-bs-toggle="modal" data-bs-target="#ShareButton" ><i class="bi bi-share"></i></button>
                     </div>
                 </div>
@@ -693,9 +315,9 @@ width: 100%;height: 100%;
 
 
             <div class="project-box">
-                <div class="project-box-img">
+                <div class="project-box-img" style=" background: url(images/aboutBackground.jpg);">
                     <div class="project-box-description" >
-                        <h5>kl</h5>
+                        <h5>project 4</h5>
                         <button type="button" data-bs-toggle="modal" data-bs-target="#ShareButton" ><i class="bi bi-share"></i></button>
                     </div>
                 </div>
@@ -716,12 +338,15 @@ width: 100%;height: 100%;
         <div class="client-box" style="background: url(images/supports/support2.png);"></div>
         <div class="client-box" style="background: url(images/supports/support3.png);"></div>
         <div class="client-box" style="background: url(images/supports/support4.png);"></div>
+        <div class="client-box" style="background: url(images/supports/support6.png);"></div>
         <div class="client-box" style="background: url(images/supports/support5.png);"></div>
     </div>
 
   </div>
 
   <hr style="padding: 0 !important;margin: 0 !important;color: transparent;">
+
+
   <div class="contact-container">
     <div class="title-address" >
         <h1 class="title">contact</h1>
@@ -732,7 +357,63 @@ width: 100%;height: 100%;
            <div class="mapswrapper" style="width: 60%;margin: auto;margin-top: 3rem;"><iframe style="width: 100%;" width="600" height="450" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=cairo&zoom=10&maptype=roadmap"></iframe><a href="https://fnfmods.net/week-8/">Week 8</a><style>.mapswrapper{background:#fff;position:relative}.mapswrapper iframe{border:0;position:relative;z-index:2}.mapswrapper a{color:rgba(0,0,0,0);position:absolute;left:0;top:0;z-index:0}</style></div>
   
            <div class="contact-data">
-            
+            <div class="contact-data-left" >
+
+                
+
+                <div class="title-address" >
+                    <h1 class="title" style="font-size: 6vh;">contact-us</h1>
+                    <div class="hr"></div>
+                       </div>
+
+                       <div class="paragraph-cont">
+                        <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quaerat autem corrupti asperiores accusantium et fuga! Facere excepturi, quo eos, nobis doloremque dolor labore expedita illum iusto, aut repellat fuga!                </p>
+    
+                    </div>
+
+                    <div class="contact-details" >
+                        <div class="contact-details-element" >
+                            <i class="bi bi-map-fill"></i>
+                            <p>34 Street Name, City Name Here,
+                                United States</p>
+                        </div>
+
+                        <div class="contact-details-element" >
+                            <i class="bi bi-telephone-fill"></i>
+                            <p>+1 (222) 345 6789</p>
+                        </div>
+
+                        <div class="contact-details-element" >
+                            <i class="bi bi-envelope"></i>
+                            <p>info@mywebsite.com
+                            </p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="contact-data-right"  style="display: flex;flex-direction: column;">
+                <form action="">
+                    <div class="input-box">
+                        <label for="formName">Name</label>
+                        <input type="text" name="" id="formName" class="form-control">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="formEmail">Email</label>
+                        <input type="email" name="" id="formEmail" class="form-control">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="formMessage">Message</label>
+                        <textarea class="form-control" name="" id="formMessage" rows="3"></textarea>
+                    </div>
+
+                    <div class="input-box">
+                        <input class="btn btn-primary" type="submit" value="Send Message">
+                    </div>
+
+                </form>
+            </div>
            </div>
   
         </div>
@@ -764,6 +445,25 @@ window.addEventListener("scroll", () => {
     // if (scrollPosition < 300 && triggered) {
     //     triggered = false;
     // }
+    
+    var allProjectsBoxes = document.querySelectorAll('.project-box');
+
+    if(scrollPosition >= 2500.39990234375){
+
+        for(var i =0 ; i<allProjectsBoxes.length ; i++){
+            allProjectsBoxes[i].classList.add('project-box-anim');
+        }
+
+    }
+    else{
+
+        for(var i =0 ; i<allProjectsBoxes.length ; i++){
+            allProjectsBoxes[i].classList.remove('project-box-anim');
+        }
+
+    
+    }
+
 
     if(scrollPosition >= 1333.5999755859375){
         document.getElementById("homeVideo").style.display="none";
